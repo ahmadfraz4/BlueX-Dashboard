@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue DashBoard</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- js -->
+    <script src="assets/js/app.js" defer></script>
+    <!-- apex chart js -->
+    <script src="assets/js/chart.js" defer></script>
+    <!-- appex chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b7d4578240.js" crossorigin="anonymous"></script>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layer"></div>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+        <div class="sidebar-menu">
+           <ul>
+                <li>
+                    <a href="#" class="sidebar-link active">
+                        <div class="sidebar-link-icon">
+                            <img class="sidebar-image" src="assets/images/sidebar images/home.png" alt="">
+                        </div>
+                        <div>Dashboard</div> 
+                    </a>        
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <div class="sidebar-link-icon">
+                            <img class="sidebar-image" src="assets/images/sidebar images/members.png" alt="">
+                        </div>
+                        <div>Members</div> 
+                    </a>        
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <div class="sidebar-link-icon">
+                            <img class="sidebar-image" src="assets/images/sidebar images/messages.png" alt="">
+                        </div>
+                        <div>Messages</div> 
+                    </a>        
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <div class="sidebar-link-icon">
+                            <img class="sidebar-image" src="assets/images/sidebar images/chats.png" alt="">
+                        </div>
+                        <div>Chat Support</div> 
+                    </a>        
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <div class="sidebar-link-icon">
+                            <img class="sidebar-image" src="assets/images/sidebar images/messages.png" alt="">
+                        </div>
+                        <div>Mail</div> 
+                    </a>        
+                </li>
+        
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <div class="sidebar-link-icon">
+                            <img class="sidebar-image" src="assets/images/sidebar images/chats.png" alt="">
+                        </div>
+                        <div>Report</div> 
+                    </a>        
+                </li>
+           </ul>
+        </div>
+    </div>
+    <header>
+        <section class="action-tools">
+            <button onclick="toggleNav()" class="hamburger">
+                <div class="bar">
+                    <img class="bar-img" src="assets/images/header images/bars.png" alt="">
+                </div>
+                <div>Menu</div>
+            </button>
+           
+            <div class="search-bar">
+                <img class="search-img" src="assets/images/header images/search.png" alt="">
+                <input class="search-input" placeholder="Search Everything" type="search">
+            </div>
+        </section>
+        <ul class="header-menu">
+            <li>
+                <a href="" class="active">Dashboard</a>
+            </li>
+            <li>
+                <a href="" class="">Members</a>
+            </li>
+            <li>
+                <a href="" class="">Report</a>
+            </li>
+            <li>
+                <a href="" class="">Help</a>
+            </li>
+        </ul>
+       
+        <div class="id-path">
+            <div onclick="iconCircle()" class="search-icon-circle">
+                <i class="fa-solid fa-magnifying-glass-location"></i>
+            </div>
+            <img src="assets/images/header images/Notification.png" alt="">
+             <div class="login">
+                <p class="log-title">Baba Voss</p>
+                <p>Super Administrator</p>
+             </div>
+             <div class="circle">
+
+             </div>
+        </div>
+    </header>
+    <div class="inner-section">
+        <div class="row1">
+            <div class="card1">
+               <div class="card1-section1">
+                Sales Report
+                <div id="chart"></div>
+               </div>
+               <div class="card1-section2">
+                    <div class="card1-section2-box">
+                        <div class="title">Total Sides</div>
+                        <div class="number">26,750</div>
+                    </div>
+                    <div class="card1-section2-box">
+                        <div class="title">Total Refund</div>
+                        <div class="number">81</div>
+                    </div>
+                    <div class="card1-section2-box">
+                        <div class="title">Total Income</div>
+                        <div class="number">148,763</div>
+                    </div>
+               </div>
+            </div>
+            <div class="card2">
+                <button class="card2-btn active">Yearly</button>
+                <button class="card2-btn">Monthly</button>
+                <button class="card2-btn">Daily</button>
+            </div>
+            <div class="card card3">  
+                <div class="card3-heading">
+                    Yearly Top Sales
+                </div>
+                <div class="card3-box">
+                    <section>
+                        <div class="card3-box-circle">
+                        
+                        </div>
+                        <div class="card3-box-content">
+                            <section class="box3-content-heading">
+                                Package 01
+                            </section>
+                            <section class="box3-para">
+                                Beauty center spa welless
+                            </section>
+                        </div>       
+                    </section>
+                    <div class="card3-payment">
+                        $12,650
+                    </div>  
+                </div>
+                <div class="card3-box">
+                    <section>
+                        <div class="card3-box-circle">
+                        
+                        </div>
+                        <div class="card3-box-content">
+                            <section class="box3-content-heading">
+                                Package 63
+                            </section>
+                            <section class="box3-para">
+                                Beauty center spa welless
+                            </section>
+                        </div>       
+                    </section>
+                    <div class="card3-payment">
+                        $1,860
+                    </div>  
+                </div>
+                <div class="card3-box">
+                    <section>
+                        <div class="card3-box-circle">
+                        
+                        </div>
+                        <div class="card3-box-content">
+                            <section class="box3-content-heading">
+                                Package 14
+                            </section>
+                            <section class="box3-para">
+                                Beauty center spa welless
+                            </section>
+                        </div>       
+                    </section>
+                    <div class="card3-payment">
+                        $81.12
+                    </div>  
+                </div>
+                <div class="card3-box">
+                    <section>
+                        <div class="card3-box-circle">
+                        
+                        </div>
+                        <div class="card3-box-content">
+                            <section class="box3-content-heading">
+                                Package 07
+                            </section>
+                            <section class="box3-para">
+                                Beauty center spa welless
+                            </section>
+                        </div>       
+                    </section>
+                    <div class="card3-payment">
+                        $21.11
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="card card4">
+               <section class="card4-section1">
+                <div class="card4-box">
+                    <div class="card4-box-heading">
+                        <div>Total</div>
+                        <div>Member</div>
+                    </div>
+                    <div class="card4-box-stats">
+                        <img src="assets/images/cards images/Group_44.png" alt="">
+                        <section>
+                            <div class="stats-time">Last Year</div>
+                            <div class="stats-profit">1,478,564</div>
+                        </section>
+                    </div>
+                    <div class="card4-profit">
+                        1,632,407
+                    </div>
+                </div>
+                <div class="card4-box">
+                    <div class="card4-box-heading">
+                        <div>Active</div>
+                        <div>Member</div>
+                    </div>
+                    <div class="card4-box-stats">
+                        <img src="assets/images/cards images/Group_44-2.png" alt="">
+                        <section>
+                            <div class="stats-time">Last Year</div>
+                            <div class="stats-profit">1,478,564</div>
+                        </section>
+                    </div>
+                    <div class="card4-profit">
+                        801,366
+                    </div>
+                </div>
+                <div class="card4-box">
+                    <div class="card4-box-heading">
+                        <div>Deleted</div>
+                        <div>Member</div>
+                    </div>
+                    <div class="card4-box-stats">
+                        <img src="assets/images/cards images/Group_44.png" alt="">
+                        <section>
+                            <div class="stats-time">Last Year</div>
+                            <div class="stats-profit">1,478,564</div>
+                        </section>
+                    </div>
+                    <div class="card4-profit">
+                        23,366
+                    </div>
+                </div>
+               </section>
+               <div class="card4-box2">
+                <div class="card4-box2-box">
+                    <div class="card4-box2-heading">
+                        <div>New</div>
+                        <div>Member</div>
+                    </div>
+                    <div class="card4-box2-stats">
+                        <img src="assets/images/cards images/Group_34-3.png" alt="">
+                        <section class="stats-box2">
+                            <div class="stats-time">This Year</div>
+                            <div class="stats-profit">+2116</div>
+                        </section>
+                    </div>
+                    <div class="card4-box2-stats">
+                        <img src="assets/images/cards images/Group_34-2.png" alt="">
+                        <section class="stats-box2">
+                            <div class="stats-time">This Year</div>
+                            <div class="stats-profit">+2116</div>
+                        </section>
+                    </div>
+                    <div class="card4-box2-stats">
+                        <img src="assets/images/cards images/Group_34-3.png" alt="">
+                        <section class="stats-box2">
+                            <div class="stats-time">This Year</div>
+                            <div class="stats-profit">+2116</div>
+                        </section>
+                    </div>
+                   
+                </div>
+               </div>
+            </div>
+            <div class="card card5">
+                <div class="card-title">
+                    Ticket Support 6
+                </div>
+                <div class="card5-box">
+                    <section>
+                        <div class="card5-box-circle">
+                        
+                        </div>
+                        <div class="card5-box-content">
+                            <section class="box3-content-heading">
+                                Package 07
+                            </section>
+                            <section class="box-subtitle">
+                                Real Estate Owner
+                            </section>
+                            <section class="box5-para">
+                                Lorem ipsum dolor si met, Steve Bold has a great experience 
+                                and skills regarding this category.
+                            </section>
+                        </div>       
+                    </section>
+                    <div class="card3-payment">
+                        14:21
+                    </div>  
+                </div>
+                <div class="card5-box">
+                    <section>
+                        <div class="card5-box-circle">
+                        
+                        </div>
+                        <div class="card5-box-content">
+                            <section class="box3-content-heading">
+                                Package 07
+                            </section>
+                            <section class="box-subtitle">
+                                Real Estate Owner
+                            </section>
+                            <section class="box5-para">
+                                Lorem ipsum dolor si met, Steve Bold has a great experience 
+                                and skills regarding this category.
+                            </section>
+                        </div>       
+                    </section>
+                    <div class="card3-payment">
+                        14:21
+                    </div>  
+                </div>
+                <div class="card5-box">
+                    <section>
+                        <div class="card5-box-circle">
+                        
+                        </div>
+                        <div class="card5-box-content">
+                            <section class="box3-content-heading">
+                                Package 07
+                            </section>
+                            <section class="box-subtitle">
+                                Real Estate Owner
+                            </section>
+                            <section class="box5-para">
+                                Lorem ipsum dolor si met, Steve Bold has a great experience 
+                                and skills regarding this category.
+                            </section>
+                        </div>       
+                    </section>
+                    <div class="card3-payment">
+                        14:21
+                    </div>  
+                </div>
+                <div class="tickets">
+                    See All Ticket
+                </div>
+            </div>
+            <div class="card card6">
+                <section class="card6-title">
+                    <section class="card-title">
+                        Latest Sales
+                    </section>
+                    <div class="card-title">
+                        +206
+                    </div>
+                </section>
+                <div class="card6-box">
+                   <section>
+                    <div class="box6-heading">
+                        Dani Daniels
+                      </div>
+                      <div>
+                        Melbourne
+                      </div>
+                   </section>
+                   <div class="box6-date">
+                    25 Aug 2019
+                   </div>
+                   <div class="box6-payment">
+                    $21.11
+                   </div>
+                </div>
+                <div class="card6-box">
+                   <section>
+                    <div class="box6-heading">
+                        Dani Daniels
+                      </div>
+                      <div>
+                        Melbourne
+                      </div>
+                   </section>
+                   <div class="box6-date">
+                    25 Aug 2019
+                   </div>
+                   <div class="box6-payment">
+                    $21.11
+                   </div>
+                </div>
+                <div class="card6-box">
+                   <section>
+                    <div class="box6-heading">
+                        Dani Daniels
+                      </div>
+                      <div>
+                        Melbourne
+                      </div>
+                   </section>
+                   <div class="box6-date">
+                    25 Aug 2019
+                   </div>
+                   <div class="box6-payment">
+                    $21.11
+                   </div>
+                </div>
+                <div class="card6-box">
+                   <section>
+                    <div class="box6-heading">
+                        Dani Daniels
+                      </div>
+                      <div>
+                        Melbourne
+                      </div>
+                   </section>
+                   <div class="box6-date">
+                    25 Aug 2019
+                   </div>
+                   <div class="box6-payment">
+                    $21.11
+                   </div>
+                </div>
+                <div class="card6-box">
+                   <section>
+                    <div class="box6-heading">
+                        Dani Daniels
+                      </div>
+                      <div>
+                        Melbourne
+                      </div>
+                   </section>
+                   <div class="box6-date">
+                    25 Aug 2019
+                   </div>
+                   <div class="box6-payment">
+                    $21.11
+                   </div>
+                </div>
+                <div class="tickets">
+                    See All Transaction
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

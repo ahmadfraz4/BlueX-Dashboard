@@ -1,0 +1,262 @@
+@media screen and (max-width:1825px){
+  .card1{
+    width: 740px;
+  }.card3,.card5,.card6{
+    width: 350px;
+  }.card4{
+    width: 450px;
+  }.card5-box-circle{
+    height:42px;
+    width: 57px;
+  }
+}
+@media screen and (max-width: 1560px) {
+  :root {
+    --sidebar-width: 250px;
+    --header-height: 60px;
+  }
+  .search-bar {
+    max-width: 400px;
+    height: 40px;
+  }
+  header {
+    height: 80px;
+  }
+  .sidebar-link-icon {
+    margin-left: 22px;
+  }
+  .id-path .circle {
+    height: 45px;
+    width: 45px;
+  }
+  .card1 {
+    height: 350px;
+    width: 627px;
+  }.card3{
+    height: 350px;
+    width: 310px;
+  }.card4{
+    width: 380px;
+  }.card5,.card6{
+    width: 310px;
+  }
+  .card1-section2 {
+    row-gap: 9px;
+    height: 100%;
+    width: 250px;
+  }
+  .card1-section2-box {
+    padding-left: 27px;
+    padding-top: 12px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .search-bar {
+    width: 300px;
+    /* display: none; */
+  }
+  .search-input {
+    padding-left: 11%;
+  }
+  .id-path img {
+    margin-right: 10px;
+  }
+  .inner-section {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 20px;
+  }
+  .card1 {
+    height: 295px;
+    width: 522px;
+  }
+  .card1-section2 {
+    width: 165px;
+  }
+  .card1-section2-box .number {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 4px;
+  } .card2 {
+    row-gap: 4px;
+  }.card3{
+    height: 280px;
+    width: 295px;
+  }.card3-heading {
+    font-size: 15px;
+    font-weight: 600;
+  }.card3-box{
+    margin-bottom: 15px;
+  } .card3-box-circle {
+    height: 40px;
+    width: 40px;
+  }
+  .box3-content-heading{
+    font-size: 11px;
+  }.box3-para{
+    font-size: 9px;
+  }
+  .card4{
+    width: 370px;
+  }.card4-box-heading{
+    font-size: 15px;
+    font-weight: 700;
+  }.card4-box-stats img{
+    max-width: 21%;
+    height: 21px;
+ }
+  .card5,.card6{
+    width: 280px;
+    height: 340px;
+  }.card-title{
+    font-size: 14px;
+  }.card5-box-circle{
+    height:33px;
+    width: 60px;
+  }#chart{
+    margin-left: -30px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  header {
+    padding: 0 10px;
+    justify-content: space-between;
+    margin-left: 0 !important;
+  }
+  .header-menu {
+    display: none;
+  }
+  .sidebar {
+    left: calc(-1 * var(--sidebar-width, 0));
+    z-index: 6;
+  }
+  .sidebar-double {
+    left: 0;
+  }
+  .card1 {
+    height: 284px;
+    width: 491px;
+  }
+  .inner-section {
+    padding-left: 23px;
+    padding-top: 20px;
+  }
+  .layer {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    z-index: 2;
+    display: none;
+  }
+  .appear {
+    display: block !important;
+  }
+  .inner-section {
+    margin-left: 0px;
+  }
+  .card1-section2 {
+    width: 165px;
+  }
+  .card1-section2-box .number {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .card2 {
+    row-gap: 3px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-menu {
+    display: none;
+  }
+  .search-bar {
+    width: 200px;
+  }
+  .search-img {
+    display: none;
+  }
+  
+  .appear {
+    display: block !important;
+  }
+  .inner-section {
+    margin-left: 0px;
+  }
+  .row1,.row2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }.card1,.card2,.card3,.card4,.card5,.card6{
+    margin-top: 21px;
+  }
+  .card1{
+    width: 80%;
+    height: 318px;
+  }.card2{
+    width: 30%;
+  }.card3,.card5,.card6{
+    width: 45%;
+  }.card4{
+    width: 62%;
+  }.card5-box-circle{
+    height: 40px;
+    width: 40px;
+  }#chart{
+    margin-left: -25px; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login,
+  .circle {
+    display: none !important;
+  }.card1{
+    width: 90%;
+  }.card2{
+    width: 50%;
+  }.card3,.card5,.card6{
+    width: 60%;
+  }.card4{
+    width: 75%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .search-icon-circle {
+    display: flex;
+  }
+  .search-bar {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 78%;
+  }.card1{
+    width: 100%;
+  }.card2{
+    width: 70%;
+  }.card3,.card4,.card5,.card6{
+    width: 100%;
+  }.card5-box-circle{
+    height: 40px;
+  }#chart{
+    margin-left: -35px; 
+  }
+}
+@media screen and (max-width : 530px){
+  .card1{
+    position: relative;
+  }
+  .card1-section2{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width : 400px) {
+  .card4-box2-box img{
+    display: none;
+  }
+}
